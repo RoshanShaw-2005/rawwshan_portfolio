@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&family=Orbitron:wght@400;500;600&family=Roboto+Mono&display=swap" rel="stylesheet">
     <style>
-    :root {
+        :root {
             --neon-green: #00ff9d;
             --dark-green: #004d2e;
             --neon-red: #ff0044;
@@ -281,7 +281,7 @@
                 grid-template-columns: 1fr;
             }
         }
-        </style>
+    </style>
 </head>
 <body>
     <div id="cursor"></div>
@@ -327,6 +327,7 @@
                     <li>Java</li>
                     <li>Python</li>
                     <li>Javascript</li>
+                    <li>php</li>
                  </ul>
             </div>
             <div class="skill-card">
@@ -346,9 +347,12 @@
                     <li>Tailwind css</li>
                     <li>Bootstrap</li>
                     <li>Django</li>
-                    <li>pandas</li>
+                    <li>Pandas</li>
                     <li>Numpy</li>
                     <li>flask</li>
+                    <li>Scikit learn</li>
+                    <li>seaborn</li>
+                    <li>OpenCV</li>
                     <li>Pytorch</li>
                     <li> React.js </li>
                     <li> Node.js </li>
@@ -366,6 +370,21 @@
                     <li>VS Code</li>
                     <li>Google Colab</li>
                     <li>Jupyter Notebook</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Devops</h3>
+                <ul>
+                    <li>GCP</li>
+                    <li>Azure</li>
+                    <li>AWS</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Software</h3>
+                <ul>
+                    <li>Figma</li>
+                    <li>Matlab</li>
                 </ul>
             </div>
             <div class="skill-card">
@@ -457,6 +476,7 @@
             <button type="submit">Send Message</button>
         </form>
     </section>
+
     <script>
         const cursor = document.getElementById('cursor');
         let cursorX = 0, cursorY = 0, targetX = 0, targetY = 0;
@@ -474,7 +494,7 @@
         function updateCursorPosition() {
             cursorX = lerp(cursorX, targetX, smoothFactor);
             cursorY = lerp(cursorY, targetY, smoothFactor);
-            cursor.style.transform = translate3d(${cursorX}px, ${cursorY}px, 0) translate(-50%, -50%);
+            cursor.style.transform = `translate3d(${cursorX}px, ${cursorY}px, 0) translate(-50%, -50%)`;
             requestAnimationFrame(updateCursorPosition);
         }
 
